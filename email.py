@@ -10,7 +10,7 @@ email['to'] = "somansunderan@gmail.com"
 email['subject'] = "HI admissiom xyz college started . Come on ... Limited seats only"
 
 #set the message that want to deliver
-email.set_content(templete1.substitute({'name':'Shibu'}))
+email.set_content(templete1.substitute({'name':'Shibu'}), 'html')
 
 #connect this messages with gmail server
 with smtplib.SMT(host='smtp.gmail.com' ,port=587) as smtp:
